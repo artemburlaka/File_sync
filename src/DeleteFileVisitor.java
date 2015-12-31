@@ -22,8 +22,7 @@ public class DeleteFileVisitor extends SimpleFileVisitor<Path> {
         if (checkFile.exists() != true) {
             Files.delete(file);
         }
-        else {
-            //do nothing
+        else { //do nothing
         }
 
         return FileVisitResult.CONTINUE;
